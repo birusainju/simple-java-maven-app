@@ -21,6 +21,7 @@ public class App
     private void doNothing(){
         String asdf = null;
         System.out.println(asdf.toString());
+        System.out.println("Hello warnings");
     }
 
 }
