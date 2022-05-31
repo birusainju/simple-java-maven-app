@@ -17,6 +17,12 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
+      - name: Run check style
+        uses: nikitasavinov/checkstyle-action@master
+        with:
+          reporter: 'github-pr-check'
+          checkstyle_config: checkstyle.xml
+          tool_name: 'testtool'
       - name: Cache SonarCloud packages
         uses: actions/cache@v1
         with:
